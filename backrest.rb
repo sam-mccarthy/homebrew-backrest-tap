@@ -52,6 +52,7 @@ class Backrest < Formula
 
   service do
     run opt_bin/"backrest"
+    environment_variables PATH: std_service_path_env
     error_log_path var/"log/backrest.log"
     log_path var/"log/backrest.log"
   end
